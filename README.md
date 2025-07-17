@@ -1,2 +1,3 @@
 # open-embeddings.org
-Main website
+
+Increasing signal to noise ratio for the AI Internet
