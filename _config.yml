@@ -1,0 +1,31 @@
+title: Open Embeddings
+description: "Publish for AI at internet scale."
+baseurl: ""
+url: "http://open-embeddings.org"
+
+theme: minima
+
+email: feedback@open-embeddings.org
+twitter_username: openembeddings
+github_username: open-embeddings
+buymeacoffee_username: openembeddings
+
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - _site/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - CLAUDE.md
+  - claude.md
+
+sass:
+  quiet_deps: true

@@ -1,0 +1,434 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@use "minima";
+@use "sass:color";
+// Mozilla-inspired design variables
+$primary-color: #0060df;
+$secondary-color: #003eaa;
+$accent-color: #fd6f53;
+$text-color: #20123a;
+$light-gray: #f9f9fb;
+$medium-gray: #e0e0e6;
+$dark-gray: #4a4a4f;
+
+// Typography
+$font-family-base:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+$font-family-mono: "Fira Code", "JetBrains Mono", Monaco, Consolas, monospace;
+
+// Override minima variables
+$brand-color: $primary-color;
+$grey-color: $dark-gray;
+$grey-color-light: $medium-gray;
+$grey-color-dark: $text-color;
+
+// Custom styles
+body {
+    font-family: $font-family-base;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: #ffffff;
+}
+
+// Header styling
+.site-header {
+    background-color: $primary-color;
+    border-bottom: 3px solid $secondary-color;
+
+    .site-title {
+        color: white !important;
+        font-weight: 700;
+        font-size: 1.8rem;
+
+        &:hover {
+            color: #f0f0f0 !important;
+            text-decoration: none;
+        }
+    }
+
+    .site-nav {
+        .page-link {
+            color: white;
+            font-weight: 500;
+
+            &:hover {
+                color: #f0f0f0;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Main content styling
+.page-content {
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+// Typography improvements
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: $text-color;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid $accent-color;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: $secondary-color;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: $primary-color;
+    margin-top: 1.5rem;
+}
+
+// Links
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary-color;
+        text-decoration: underline;
+    }
+}
+
+// Buttons and CTAs
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: white;
+        text-decoration: none;
+    }
+
+    &.btn-secondary {
+        background-color: $accent-color;
+
+        &:hover {
+            background-color: color.adjust($accent-color, $lightness: -10%);
+        }
+    }
+}
+
+// Code blocks
+pre,
+code {
+    font-family: $font-family-mono;
+    background-color: $light-gray;
+    border: 1px solid $medium-gray;
+    border-radius: 4px;
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+code {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9em;
+}
+
+// Lists
+ul,
+ol {
+    margin-bottom: 1rem;
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+// Tables
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+
+    th,
+    td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid $medium-gray;
+    }
+
+    th {
+        background-color: $light-gray;
+        font-weight: 600;
+        color: $text-color;
+    }
+}
+
+// Blockquotes
+blockquote {
+    border-left: 4px solid $accent-color;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: $dark-gray;
+    background-color: $light-gray;
+    padding: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+// Forms
+.form-group {
+    margin-bottom: 1rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: $text-color;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid $medium-gray;
+        border-radius: 4px;
+        font-family: $font-family-base;
+        font-size: 1rem;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+}
+
+// Cards and sections
+.card {
+    background-color: white;
+    border: 1px solid $medium-gray;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// Utility classes
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: $dark-gray;
+}
+
+.highlight {
+    background-color: rgba($accent-color, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .site-header {
+        .site-title {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// Home page specific styles
+.home {
+    .post-list {
+        margin-top: 2rem;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 3rem 0;
+        background: linear-gradient(135deg, $light-gray 0%, white 100%);
+        margin: -2rem -2rem 2rem -2rem;
+        border-radius: 0 0 12px 12px;
+
+        h1 {
+            margin-bottom: 1rem;
+            border-bottom: none;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: $dark-gray;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+// Footer
+.site-footer {
+    background-color: $light-gray;
+    border-top: 1px solid $medium-gray;
+    padding: 2rem 0;
+    margin-top: 3rem;
+
+    .footer-heading {
+        color: $text-color;
+        font-weight: 600;
+    }
+
+    .contact-list,
+    .social-media-list {
+        list-style: none;
+        margin-left: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+// TOC styling for RFC page
+.toc {
+    background-color: $light-gray;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+
+    ul {
+        margin-bottom: 0;
+
+        li {
+            margin-bottom: 0.25rem;
+        }
+    }
+}
+
+// Status badges
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &.draft {
+        background-color: rgba($accent-color, 0.1);
+        color: $accent-color;
+    }
+
+    &.in-progress {
+        background-color: rgba($primary-color, 0.1);
+        color: $primary-color;
+    }
+
+    &.completed {
+        background-color: rgba(#10b981, 0.1);
+        color: #10b981;
+    }
+}
+
+// Interactive demo placeholder
+.demo-placeholder {
+    background-color: $light-gray;
+    border: 2px dashed $medium-gray;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2rem 0;
+
+    .demo-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $dark-gray;
+        margin-bottom: 1rem;
+    }
+
+    .demo-description {
+        color: $dark-gray;
+        margin-bottom: 1rem;
+    }
+}
+
+// Syntax highlighting improvements
+.highlight {
+    background-color: $light-gray;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+
+    code {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+}
+
+// Print styles
+@media print {
+    .site-header,
+    .site-footer {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
