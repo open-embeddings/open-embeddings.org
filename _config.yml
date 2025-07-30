@@ -21,7 +21,7 @@
 title: Open Embeddings
 email: feedback@openembeddings.org
 description: >-
-  A normalized way for Agents / Scripts to to query diverse data sources for relevancy without re-embedding the original content keeps the internet more open than less. Open Embeddings is a project to create a standardized way for Creators / Publishers to expose their content in an AI-native way, without end-users in an embedding model agnostic way.
+  A normalized way for Agents / Scripts to query diverse data sources for relevancy without re-embedding the original content, keeping the internet more open than less. Open Embeddings is a project to create a standardized way for Creators / Publishers to expose their content in an AI-native way, in a manner that is agnostic to the embedding model used by end-users.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://open-embeddings.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: NickJLange
