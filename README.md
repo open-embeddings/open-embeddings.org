@@ -20,7 +20,7 @@ Define a communication format for new file(s) to be included on every website ca
 ### Problem Statement 2:
 Content publishers need an AI native way to expose contents to Agentic systems. Content publishers can expose multiple sets of embedding for the same content at a lower aggregate bandwidth than the original content while still allow AI systems to interact and add value for users.
 
--  Until recent research work has demonstrated concrete steps to the contrary, Proprietary Models have tended to "lock up" content that requires "re-embedding" content to allow finding similarities. The cost of transforming across embedding spaces should be lower than the cost of re-embedding content at scale.  See https://arxiv.org/html/2505.12540v2
+-  Until recent research work has demonstrated concrete steps to the contrary, Proprietary Models have tended to "lock up" content that requires re-embedding to allow finding similarities. The cost of transforming across embedding spaces should be lower than the cost of re-embedding content at scale.  See https://arxiv.org/html/2505.12540v2
 
 ## Target End-User:
 Developers, Content Creators, AI platforms
