@@ -1,0 +1,3 @@
+[submodule "rfc"]
+	path = rfc
+	url = git@github.com:open-embeddings/open-embeddings-rfc.git
