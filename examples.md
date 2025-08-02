@@ -19,7 +19,7 @@ As I publish content, I want to make searching it easier. This will require addi
 
 ## Images
 
- Google DeepMind just published the whole earth dataset with embeddings. How these can be queries dynamically has two problems:
+ Google DeepMind just published the whole earth dataset with embeddings. How these can be queried dynamically has two problems:
  1. Intent - they were intended to be consumed by an engine, but that may not be why I'm asking
  2. Model access - I may not have access to the model that generated the embeddings, so I need a way to transform between embedding spaces.
 
