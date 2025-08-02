@@ -61,3 +61,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Personal files and messages
+*.msg
+outreach_messsage.msg
