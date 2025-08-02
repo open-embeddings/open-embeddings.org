@@ -1,5 +1,7 @@
 *.gem
 *.rbc
+.claude
+CLAUDE.md
 /.config
 /coverage/
 /InstalledFiles
