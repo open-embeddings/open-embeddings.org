@@ -11,7 +11,7 @@ Your input is essential to creating a specification that works for everyone.
 
 ## 📝 Where Provide Feedback
 - Twitter: [@OpenEmbeddings](https://twitter.com/OpenEmbeddings)
-- GitHub Discussions: [Open Embeddings Discussions](http://gitjhub.com/open-embeddings/open-embeddings/discussions)
+- GitHub Discussions: [Open Embeddings Discussions](https://github.com/open-embeddings/open-embeddings/discussions)
 - Email: [mailto:feedback@open-embeddings.org](mailto:feedback@open-embeddings.org)
 
 ### 🗣️ Share Your Use Cases
