@@ -1,29 +1,24 @@
 ---
 layout: home
-title: Home
+title: Open Embeddings
 ---
-
-# The Spice Must Flow: Open Embeddings
-
-**Open Embeddings creates a standardized way for AI-native content discovery.**
-
-Embeddings can make it easier to find relevant content for humans, agents and scripts without access to the original material. Today, keyword searches into content providers leave context on the table. Similarity searches are great, but we have to download the content to generate the embeddings. This wastes time and bandwidth, and it can lead to data capture behind walled gardens.
+![Logo](../assets/images/logo.jpeg){: width="450" }
 
 ## The Problem
+Embeddings make it easier to find relevant content for humans, agents and scripts without access to the original material.
 
 **What problem is Open Embedding solving?**
-Humans / Agents / Scripts want to find maximally relevant content without needing to consume unrelated content in a publisher agnostic way.
+Humans / Agents / Scripts want to find maximally relevant content without needing to consume unrelated content in a publisher agnostic way.  Today, keyword searches into content providers leave context on the table. Similarity searches are great, but we have to download the content to generate the embeddings. This wastes time and bandwidth, and it can lead to data capture behind walled gardens.
 
-## Our Solution
 
-**How do Open Embeddings solve this problem?**
-- Create a standardized way for content providers to expose their content in an AI-native format
-- Create a standardized way for indexers to provide embeddings and metadata for content discovery  
+## How do Open Embeddings solve this problem?**
+- Create a standardized file format for content providers to expose their content in an AI-native way
+- Create a standardized way for indexers to provide embeddings and metadata for content discovery
 - Create a standardized way for agents and scripts to query embeddings by URI
 
-## Practical Example
 
-I wanted to build a script to build up a collection of youtube/vimeo/tiktok self-improvement videos to build a pipeline "the path to my best self". Embedding all possible videos about self-improvement would overwhelm my janky laptop. Better instead if I had a way to gather embeddings on aspects of the video, encode my query, and pop out the most relevant videos for further screening.
+### See the examples page for sample use cases.
+### See the RFC page for a draft specification
 
 ## Community Benefits
 
@@ -53,7 +48,7 @@ I wanted to build a script to build up a collection of youtube/vimeo/tiktok self
 When you understand our thesis, we hope you will help us:
 
 * Define a great Open Format / Spec for content-providers to leverage multiple models
-* Update commonly used content publishing tools to support the format securely  
+* Update commonly used content publishing tools to support the format securely
 * Generate a corpus of distributed cross-space materials to allow transitions between closed models and open model encoded data
 
 Our goal is to find a sustainable way to lower the barrier to entry for new AI agents/scripts and services, while taking pressure off the indexers pounding content providers to effectively perform the same operation across multiple models.
