@@ -13,4 +13,4 @@ permalink: /faq.html
     - No, this is not vaporware. This is a real project with a real specification and real use cases. We are actively working on it and welcome contributions from the community.
 
 1. What about dynamic content?
-  From a publisher perspective, dynamic content has a URI / lifespan and we definitely want to advertise that the underlyind content behind the embeddings may have changed.
+  From a publisher perspective, dynamic content has a URI / lifespan and we definitely want to advertise that the underlying content behind the embeddings may have changed.
