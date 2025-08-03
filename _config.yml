@@ -26,3 +26,7 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - CLAUDE.md
+  - claude.md
+
+sass:
+  quiet_deps: true
