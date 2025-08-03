@@ -1,7 +1,10 @@
 *.gem
 *.rbc
 .claude
+claude.md
+gemini.md
 CLAUDE.md
+GEMINI.md
 /.config
 /coverage/
 /InstalledFiles

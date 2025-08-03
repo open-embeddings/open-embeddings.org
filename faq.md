@@ -6,6 +6,13 @@ permalink: /faq.html
 
 # Frequently Asked Questions (FAQ)
 
+1. What legal protections do embeddings have and in what countries?
+
+    - Unknown at this time.
+
+1. Do they inherit copyright?
+    - Unknown at this time.
+
 1. Why should the publisher pay?
     - Publishers benefit from reduced costs in bandwidth, compute, and storage by exposing their content in an AI-native format. Everyone benefits as they don't have to do the encoding, saving precious GPUs for other inference activities.
 
