@@ -8,7 +8,6 @@ permalink: /feedback.html
 
 Your input is essential to creating a specification that works for everyone.
 
-
 ## 📝 Where to Provide Feedback
 - Twitter: [@OpenEmbeddings](https://twitter.com/OpenEmbeddings)
 - GitHub Discussions: [Open Embeddings Discussions](https://github.com/open-embeddings/open-embeddings/discussions)

@@ -19,5 +19,7 @@ permalink: /faq.html
 1. Is this vaporware?
     - No, this is not vaporware. This is a real project with a real specification and real use cases. We are actively working on it and welcome contributions from the community.
 
-1. What about dynamic content?
-  From a publisher perspective, dynamic content has a URI / lifespan and we definitely want to advertise that the underlying content behind the embeddings may have changed.
+1. What about dynamic / updated content?
+  From a certain-perspective, we want to allow Publishers to advertise embeddings - we are not enforcing a 1-1 correlation with the underlying content. We just need to make that transparent via a "dynamic-content" flag.
+
+  As an example, http://www.nicklange.com/cookies might have 100 cookies available (before I eat them). I want to tell people that I have cookies, match on cookies, but if the actual cookies in the cookie jar are 0 - they still arrive at my site.
