@@ -16,6 +16,15 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  consumers:
+    output: true
+  publishers:
+    output: true
+  indexers-hub:
+    output: true
+collections_dir: pages
+
 exclude:
   - vendor/
   - .bundle/
@@ -26,6 +35,7 @@ exclude:
   - node_modules/
   - CLAUDE.md
   - claude.md
+  - GEMINI.md
 
 sass:
   quiet_deps: true

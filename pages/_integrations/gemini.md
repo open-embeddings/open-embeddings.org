@@ -1,0 +1,1 @@
+../../open-embeddings-rfc/gemini.md
