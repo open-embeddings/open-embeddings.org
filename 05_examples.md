@@ -4,14 +4,25 @@ title: "Use Cases & Examples"
 permalink: /examples.html
 ---
 
+This page demonstrates practical implementations and use cases for the Open Embeddings specification.
+
+## Real-World Use Case: The Self-Improvement Video Pipeline
+
+**The Challenge**: Building a script to collect youtube/vimeo/tiktok self-improvement videos for "the path to my best self" without overwhelming a laptop with embedding computation.
+
+**The Open Embeddings Solution**:
+1. Video platforms expose embeddings via `open-embeddings.json`
+2. Your script encodes the query "self-improvement techniques"
+3. Calculate similarity against pre-computed embeddings
+4. Receive ranked, relevant videos for further screening
+
+**Benefits**:
+- No need to download every video to check relevance
+- Reduced bandwidth and compute costs
+- Publisher-agnostic discovery across platforms
+
+
 # Use Cases - Walk the modality ladder
-
-### Skill Grinding
-
-I wanted to build a script to build up a collection of youtube/vimeo/tiktok self-improvement videos to build a pipeline "the path to my best self". Embedding all possible videos about self-improvement would overwhelm my janky laptop. Better instead if I had a way to gather embeddings on aspects of the video, encode my query, and pop out the most relevant videos for further screening.
-
-What I would rather do is encode my question across n-models and then query multiple indexers or content providers for relevant content. This would allow me to find the most relevant content without needing to download every video or article, saving time and bandwidth.
-
 
 ## Static Content Sites
 

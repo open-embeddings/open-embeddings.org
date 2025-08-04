@@ -16,6 +16,50 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  consumers:
+    output: true
+    permalink: /:collection/:name/
+  publishers:
+    output: true
+    permalink: /:collection/:name/
+  indexers-hub:
+    output: true
+    permalink: /:collection/:name/
+  rfc:
+    output: true
+    permalink: /:collection/:name/
+  integrations:
+    output: true
+    permalink: /:collection/:name/
+collections_dir: pages
+
+# Navigation configuration
+header_pages:
+  - 02_vision.md
+  - 05_examples.md
+  - 03_feedback.md
+  - 04_faq.md
+
+# Collection navigation
+navbar:
+  collections:
+    - name: "RFC"
+      collection: rfc
+      icon: "📋"
+    - name: "Integrations"  
+      collection: integrations
+      icon: "🔗"
+    - name: "Consumers"
+      collection: consumers
+      icon: "👥"
+    - name: "Publishers"
+      collection: publishers  
+      icon: "📡"
+    - name: "Indexers Hub"
+      collection: indexers-hub
+      icon: "🗂️"
+
 exclude:
   - vendor/
   - .bundle/
@@ -23,9 +67,7 @@ exclude:
   - _site/
   - Gemfile
   - Gemfile.lock
-  - node_modules/
-  - CLAUDE.md
-  - claude.md
+  - open-embeddings-rfc
 
 sass:
   quiet_deps: true
