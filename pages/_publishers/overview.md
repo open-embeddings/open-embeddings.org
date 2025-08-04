@@ -15,7 +15,7 @@ nav-include: true
 4. Control how their content is represented in AI systems
 
 
-## Docusauraus Generator
+## Docusaurus Generator
 
 * Sample Site: http://www.5l-labs.com/
 ✌🏽　FIXME ✌🏽
