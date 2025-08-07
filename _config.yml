@@ -2,7 +2,7 @@ title: Open Embeddings
 description: "Publish for AI at internet scale."
 baseurl: ""
 url: "http://open-embeddings.org"
-
+google_analytics: "{{ ENV['GOOGLE_ANALYTICS_ID'] }}"
 theme: minima
 
 email: feedback@open-embeddings.org
@@ -47,14 +47,14 @@ navbar:
     - name: "RFC"
       collection: rfc
       icon: "📋"
-    - name: "Integrations"  
+    - name: "Integrations"
       collection: integrations
       icon: "🔗"
     - name: "Consumers"
       collection: consumers
       icon: "👥"
     - name: "Publishers"
-      collection: publishers  
+      collection: publishers
       icon: "📡"
     - name: "Indexers Hub"
       collection: indexers-hub
