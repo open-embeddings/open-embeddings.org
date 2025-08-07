@@ -5,6 +5,7 @@ gem "csv"
 gem "logger"
 gem "base64"
 gem "minima", "~>2.5"
+gem 'dotenv', groups: [:development, :test]
 
 # If you want to use GitHub Pages, replace the above line with:
 # gem "github-pages", group: :jekyll_plugins
